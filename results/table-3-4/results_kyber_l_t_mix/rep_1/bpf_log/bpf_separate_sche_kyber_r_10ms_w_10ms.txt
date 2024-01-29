@@ -1,0 +1,8 @@
+Attaching 2 probes...
+start: 69775339909563
+domain: READ, depth: 128, timestamp: 69811320016332
+domain: READ, depth: 64, timestamp: 69811840024589
+domain: READ, depth: 32, timestamp: 69817888024609
+domain: READ, depth: 8, timestamp: 69818200010715
+domain: READ, depth: 4, timestamp: 69818616023726
+domain: READ, depth: 1, timestamp: 69818720023625

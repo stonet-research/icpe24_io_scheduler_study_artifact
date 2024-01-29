@@ -1,0 +1,421 @@
+{'run': True, 'print_only': False, 'parse': False}
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_none_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_1_dev_1_sche_none.txt
+b''
+b'[ perf record: Woken up 8 times to write data ]\n[ perf record: Captured and wrote 2.531 MB results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_none_perf.data (39983 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_none_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_1_dev_1_sche_none_g.txt
+b''
+b'[ perf record: Woken up 111 times to write data ]\n[ perf record: Captured and wrote 28.718 MB results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_none_g_perf.data (41553 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_bfq_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_1_dev_1_sche_bfq.txt
+b''
+b'[ perf record: Woken up 7 times to write data ]\n[ perf record: Captured and wrote 2.326 MB results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_bfq_perf.data (37284 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_bfq_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_1_dev_1_sche_bfq_g.txt
+b''
+b'[ perf record: Woken up 118 times to write data ]\n[ perf record: Captured and wrote 30.594 MB results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_bfq_g_perf.data (41396 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_kyber_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_1_dev_1_sche_kyber.txt
+b''
+b'[ perf record: Woken up 8 times to write data ]\n[ perf record: Captured and wrote 2.566 MB results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_kyber_perf.data (41777 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_kyber_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_1_dev_1_sche_kyber_g.txt
+b''
+b'[ perf record: Woken up 113 times to write data ]\n[ perf record: Captured and wrote 29.264 MB results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_kyber_g_perf.data (39695 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_mq-deadline_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_1_dev_1_sche_mq-deadline.txt
+b''
+b'[ perf record: Woken up 8 times to write data ]\n[ perf record: Captured and wrote 2.546 MB results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_mq-deadline_perf.data (41402 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_mq-deadline_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_1_dev_1_sche_mq-deadline_g.txt
+b''
+b'[ perf record: Woken up 112 times to write data ]\n[ perf record: Captured and wrote 29.335 MB results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_mq-deadline_g_perf.data (39882 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_none_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=2 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_2_dev_1_sche_none.txt
+b''
+b'[ perf record: Woken up 14 times to write data ]\n[ perf record: Captured and wrote 4.203 MB results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_none_perf.data (72418 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_none_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=2 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_2_dev_1_sche_none_g.txt
+b''
+b'[ perf record: Woken up 212 times to write data ]\n[ perf record: Captured and wrote 54.471 MB results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_none_g_perf.data (70668 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_bfq_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=2 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_2_dev_1_sche_bfq.txt
+b''
+b'[ perf record: Woken up 13 times to write data ]\n[ perf record: Captured and wrote 4.123 MB results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_bfq_perf.data (70372 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_bfq_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=2 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_2_dev_1_sche_bfq_g.txt
+b''
+b'[ perf record: Woken up 238 times to write data ]\n[ perf record: Captured and wrote 60.851 MB results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_bfq_g_perf.data (75628 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_kyber_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=2 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_2_dev_1_sche_kyber.txt
+b''
+b'[ perf record: Woken up 14 times to write data ]\n[ perf record: Captured and wrote 4.232 MB results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_kyber_perf.data (72395 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_kyber_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=2 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_2_dev_1_sche_kyber_g.txt
+b''
+b'[ perf record: Woken up 225 times to write data ]\n[ perf record: Captured and wrote 57.714 MB results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_kyber_g_perf.data (72437 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_mq-deadline_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=2 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_2_dev_1_sche_mq-deadline.txt
+b''
+b'[ perf record: Woken up 12 times to write data ]\n[ perf record: Captured and wrote 4.176 MB results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_mq-deadline_perf.data (71545 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_mq-deadline_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=2 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_2_dev_1_sche_mq-deadline_g.txt
+b''
+b'[ perf record: Woken up 227 times to write data ]\n[ perf record: Captured and wrote 58.190 MB results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_mq-deadline_g_perf.data (71389 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_none_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=3 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_3_dev_1_sche_none.txt
+b''
+b'[ perf record: Woken up 18 times to write data ]\n[ perf record: Captured and wrote 5.654 MB results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_none_perf.data (99603 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_none_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=3 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_3_dev_1_sche_none_g.txt
+b''
+b'[ perf record: Woken up 244 times to write data ]\n[ perf record: Captured and wrote 62.798 MB results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_none_g_perf.data (101442 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_bfq_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=3 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_3_dev_1_sche_bfq.txt
+b''
+b'[ perf record: Woken up 18 times to write data ]\n[ perf record: Captured and wrote 5.706 MB results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_bfq_perf.data (100185 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_bfq_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=3 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_3_dev_1_sche_bfq_g.txt
+b''
+b'[ perf record: Woken up 356 times to write data ]\n[ perf record: Captured and wrote 90.290 MB results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_bfq_g_perf.data (100174 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_kyber_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=3 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_3_dev_1_sche_kyber.txt
+b''
+b'[ perf record: Woken up 34 times to write data ]\n[ perf record: Captured and wrote 9.847 MB results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_kyber_perf.data (178090 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_kyber_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=3 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_3_dev_1_sche_kyber_g.txt
+b''
+b'[ perf record: Woken up 376 times to write data ]\n[ perf record: Captured and wrote 94.773 MB results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_kyber_g_perf.data (166009 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_mq-deadline_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=3 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_3_dev_1_sche_mq-deadline.txt
+b''
+b'[ perf record: Woken up 17 times to write data ]\n[ perf record: Captured and wrote 5.800 MB results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_mq-deadline_perf.data (101649 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_mq-deadline_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=3 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_3_dev_1_sche_mq-deadline_g.txt
+b''
+b'[ perf record: Woken up 348 times to write data ]\n[ perf record: Captured and wrote 87.917 MB results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_mq-deadline_g_perf.data (100207 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_none_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=4 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_4_dev_1_sche_none.txt
+b''
+b'[ perf record: Woken up 22 times to write data ]\n[ perf record: Captured and wrote 7.242 MB results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_none_perf.data (128764 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_none_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=4 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_4_dev_1_sche_none_g.txt
+b''
+b'[ perf record: Woken up 260 times to write data ]\n[ perf record: Captured and wrote 66.417 MB results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_none_g_perf.data (129427 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_bfq_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=4 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_4_dev_1_sche_bfq.txt
+b''
+b'[ perf record: Woken up 26 times to write data ]\n[ perf record: Captured and wrote 7.394 MB results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_bfq_perf.data (131033 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_bfq_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=4 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_4_dev_1_sche_bfq_g.txt
+b''
+b'[ perf record: Woken up 477 times to write data ]\n[ perf record: Captured and wrote 120.417 MB results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_bfq_g_perf.data (129094 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_kyber_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=4 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_4_dev_1_sche_kyber.txt
+b''
+b'[ perf record: Woken up 36 times to write data ]\n[ perf record: Captured and wrote 10.194 MB results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_kyber_perf.data (184584 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_kyber_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=4 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_4_dev_1_sche_kyber_g.txt
+b''
+b'[ perf record: Woken up 463 times to write data ]\n[ perf record: Captured and wrote 116.940 MB results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_kyber_g_perf.data (178383 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_mq-deadline_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=4 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_4_dev_1_sche_mq-deadline.txt
+b''
+b'[ perf record: Woken up 24 times to write data ]\n[ perf record: Captured and wrote 7.281 MB results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_mq-deadline_perf.data (129991 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_mq-deadline_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=4 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_4_dev_1_sche_mq-deadline_g.txt
+b''
+b'[ perf record: Woken up 470 times to write data ]\n[ perf record: Captured and wrote 119.033 MB results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_mq-deadline_g_perf.data (130807 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_none_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=5 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_5_dev_1_sche_none.txt
+b''
+b'[ perf record: Woken up 30 times to write data ]\n[ perf record: Captured and wrote 8.877 MB results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_none_perf.data (159938 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_none_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=5 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_5_dev_1_sche_none_g.txt
+b''
+b'[ perf record: Woken up 298 times to write data ]\n[ perf record: Captured and wrote 75.755 MB results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_none_g_perf.data (160418 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_bfq_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=5 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_5_dev_1_sche_bfq.txt
+b''
+b'[ perf record: Woken up 30 times to write data ]\n[ perf record: Captured and wrote 8.839 MB results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_bfq_perf.data (158468 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_bfq_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=5 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_5_dev_1_sche_bfq_g.txt
+b''
+b'[ perf record: Woken up 600 times to write data ]\n[ perf record: Captured and wrote 151.326 MB results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_bfq_g_perf.data (158425 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_kyber_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=5 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_5_dev_1_sche_kyber.txt
+b''
+b'[ perf record: Woken up 40 times to write data ]\n[ perf record: Captured and wrote 11.073 MB results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_kyber_perf.data (201047 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_kyber_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=5 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_5_dev_1_sche_kyber_g.txt
+b''
+b'[ perf record: Woken up 543 times to write data ]\n[ perf record: Captured and wrote 137.098 MB results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_kyber_g_perf.data (197577 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_mq-deadline_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=5 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_5_dev_1_sche_mq-deadline.txt
+b''
+b'[ perf record: Woken up 29 times to write data ]\n[ perf record: Captured and wrote 8.883 MB results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_mq-deadline_perf.data (159532 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_mq-deadline_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=5 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_5_dev_1_sche_mq-deadline_g.txt
+b''
+b'[ perf record: Woken up 591 times to write data ]\n[ perf record: Captured and wrote 149.300 MB results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_mq-deadline_g_perf.data (159367 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_none_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=10 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_10_dev_1_sche_none.txt
+b''
+b'[ perf record: Woken up 61 times to write data ]\n[ perf record: Captured and wrote 16.237 MB results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_none_perf.data (297223 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_none_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=10 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_10_dev_1_sche_none_g.txt
+b''
+b'[ perf record: Woken up 462 times to write data ]\n[ perf record: Captured and wrote 116.980 MB results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_none_g_perf.data (297179 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_bfq_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=10 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_10_dev_1_sche_bfq.txt
+b''
+b'[ perf record: Woken up 61 times to write data ]\n[ perf record: Captured and wrote 16.283 MB results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_bfq_perf.data (297132 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_bfq_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=10 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_10_dev_1_sche_bfq_g.txt
+b''
+b'[ perf record: Woken up 1194 times to write data ]\n[ perf record: Captured and wrote 300.000 MB results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_bfq_g_perf.data (296814 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_kyber_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=10 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_10_dev_1_sche_kyber.txt
+b''
+b'[ perf record: Woken up 61 times to write data ]\n[ perf record: Captured and wrote 16.178 MB results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_kyber_perf.data (296605 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_kyber_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=10 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_10_dev_1_sche_kyber_g.txt
+b''
+b'[ perf record: Woken up 812 times to write data ]\n[ perf record: Captured and wrote 204.933 MB results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_kyber_g_perf.data (278636 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_mq-deadline_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=10 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_10_dev_1_sche_mq-deadline.txt
+b''
+b'[ perf record: Woken up 61 times to write data ]\n[ perf record: Captured and wrote 16.210 MB results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_mq-deadline_perf.data (297149 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_mq-deadline_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=10 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_10_dev_1_sche_mq-deadline_g.txt
+b''
+b'[ perf record: Woken up 1179 times to write data ]\n[ perf record: Captured and wrote 296.634 MB results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_mq-deadline_g_perf.data (296977 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_none_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=15 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_15_dev_1_sche_none.txt
+b''
+b'[ perf record: Woken up 61 times to write data ]\n[ perf record: Captured and wrote 16.214 MB results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_none_perf.data (297201 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_none_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=15 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_15_dev_1_sche_none_g.txt
+b''
+b'[ perf record: Woken up 438 times to write data ]\n[ perf record: Captured and wrote 110.593 MB results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_none_g_perf.data (297191 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_bfq_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=15 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_15_dev_1_sche_bfq.txt
+b''
+b'[ perf record: Woken up 61 times to write data ]\n[ perf record: Captured and wrote 16.333 MB results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_bfq_perf.data (297068 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_bfq_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=15 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_15_dev_1_sche_bfq_g.txt
+b''
+b'[ perf record: Woken up 1192 times to write data ]\n[ perf record: Captured and wrote 299.988 MB results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_bfq_g_perf.data (296954 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_kyber_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=15 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_15_dev_1_sche_kyber.txt
+b''
+b'[ perf record: Woken up 61 times to write data ]\n[ perf record: Captured and wrote 16.213 MB results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_kyber_perf.data (297023 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_kyber_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=15 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_15_dev_1_sche_kyber_g.txt
+b''
+b'[ perf record: Woken up 889 times to write data ]\n[ perf record: Captured and wrote 223.360 MB results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_kyber_g_perf.data (296958 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -o  results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_mq-deadline_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=15 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_15_dev_1_sche_mq-deadline.txt
+b''
+b'[ perf record: Woken up 61 times to write data ]\n[ perf record: Captured and wrote 16.237 MB results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_mq-deadline_perf.data (297168 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf record -a -e cycles,instructions -F 99 -g -o results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_mq-deadline_g_perf.data /mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=15 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=128 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_breakdown_1_dev_global/fio/proc_15_dev_1_sche_mq-deadline_g.txt
+b''
+b'[ perf record: Woken up 1181 times to write data ]\n[ perf record: Captured and wrote 296.961 MB results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_mq-deadline_g_perf.data (297024 samples) ]\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_none_perf.data >> results_breakdown_1_dev_global/perf_list/proc_1_dev_1_sche_none_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_none_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_1_dev_1_sche_none_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_none_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_1_dev_1_sche_none.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_bfq_perf.data >> results_breakdown_1_dev_global/perf_list/proc_1_dev_1_sche_bfq_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_bfq_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_1_dev_1_sche_bfq_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_bfq_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_1_dev_1_sche_bfq.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_kyber_perf.data >> results_breakdown_1_dev_global/perf_list/proc_1_dev_1_sche_kyber_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_kyber_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_1_dev_1_sche_kyber_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_kyber_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_1_dev_1_sche_kyber.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_mq-deadline_perf.data >> results_breakdown_1_dev_global/perf_list/proc_1_dev_1_sche_mq-deadline_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_mq-deadline_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_1_dev_1_sche_mq-deadline_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_1_dev_1_sche_mq-deadline_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_1_dev_1_sche_mq-deadline.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_none_perf.data >> results_breakdown_1_dev_global/perf_list/proc_2_dev_1_sche_none_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_none_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_2_dev_1_sche_none_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_none_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_2_dev_1_sche_none.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_bfq_perf.data >> results_breakdown_1_dev_global/perf_list/proc_2_dev_1_sche_bfq_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_bfq_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_2_dev_1_sche_bfq_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_bfq_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_2_dev_1_sche_bfq.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_kyber_perf.data >> results_breakdown_1_dev_global/perf_list/proc_2_dev_1_sche_kyber_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_kyber_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_2_dev_1_sche_kyber_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_kyber_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_2_dev_1_sche_kyber.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_mq-deadline_perf.data >> results_breakdown_1_dev_global/perf_list/proc_2_dev_1_sche_mq-deadline_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_mq-deadline_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_2_dev_1_sche_mq-deadline_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_2_dev_1_sche_mq-deadline_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_2_dev_1_sche_mq-deadline.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_none_perf.data >> results_breakdown_1_dev_global/perf_list/proc_3_dev_1_sche_none_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_none_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_3_dev_1_sche_none_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_none_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_3_dev_1_sche_none.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_bfq_perf.data >> results_breakdown_1_dev_global/perf_list/proc_3_dev_1_sche_bfq_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_bfq_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_3_dev_1_sche_bfq_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_bfq_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_3_dev_1_sche_bfq.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_kyber_perf.data >> results_breakdown_1_dev_global/perf_list/proc_3_dev_1_sche_kyber_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_kyber_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_3_dev_1_sche_kyber_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_kyber_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_3_dev_1_sche_kyber.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_mq-deadline_perf.data >> results_breakdown_1_dev_global/perf_list/proc_3_dev_1_sche_mq-deadline_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_mq-deadline_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_3_dev_1_sche_mq-deadline_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_3_dev_1_sche_mq-deadline_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_3_dev_1_sche_mq-deadline.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_none_perf.data >> results_breakdown_1_dev_global/perf_list/proc_4_dev_1_sche_none_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_none_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_4_dev_1_sche_none_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_none_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_4_dev_1_sche_none.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_bfq_perf.data >> results_breakdown_1_dev_global/perf_list/proc_4_dev_1_sche_bfq_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_bfq_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_4_dev_1_sche_bfq_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_bfq_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_4_dev_1_sche_bfq.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_kyber_perf.data >> results_breakdown_1_dev_global/perf_list/proc_4_dev_1_sche_kyber_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_kyber_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_4_dev_1_sche_kyber_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_kyber_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_4_dev_1_sche_kyber.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_mq-deadline_perf.data >> results_breakdown_1_dev_global/perf_list/proc_4_dev_1_sche_mq-deadline_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_mq-deadline_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_4_dev_1_sche_mq-deadline_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_4_dev_1_sche_mq-deadline_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_4_dev_1_sche_mq-deadline.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_none_perf.data >> results_breakdown_1_dev_global/perf_list/proc_5_dev_1_sche_none_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_none_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_5_dev_1_sche_none_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_none_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_5_dev_1_sche_none.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_bfq_perf.data >> results_breakdown_1_dev_global/perf_list/proc_5_dev_1_sche_bfq_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_bfq_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_5_dev_1_sche_bfq_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_bfq_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_5_dev_1_sche_bfq.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_kyber_perf.data >> results_breakdown_1_dev_global/perf_list/proc_5_dev_1_sche_kyber_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_kyber_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_5_dev_1_sche_kyber_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_kyber_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_5_dev_1_sche_kyber.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_mq-deadline_perf.data >> results_breakdown_1_dev_global/perf_list/proc_5_dev_1_sche_mq-deadline_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_mq-deadline_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_5_dev_1_sche_mq-deadline_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_5_dev_1_sche_mq-deadline_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_5_dev_1_sche_mq-deadline.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_none_perf.data >> results_breakdown_1_dev_global/perf_list/proc_10_dev_1_sche_none_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_none_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_10_dev_1_sche_none_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_none_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_10_dev_1_sche_none.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_bfq_perf.data >> results_breakdown_1_dev_global/perf_list/proc_10_dev_1_sche_bfq_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_bfq_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_10_dev_1_sche_bfq_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_bfq_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_10_dev_1_sche_bfq.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_kyber_perf.data >> results_breakdown_1_dev_global/perf_list/proc_10_dev_1_sche_kyber_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_kyber_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_10_dev_1_sche_kyber_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_kyber_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_10_dev_1_sche_kyber.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_mq-deadline_perf.data >> results_breakdown_1_dev_global/perf_list/proc_10_dev_1_sche_mq-deadline_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_mq-deadline_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_10_dev_1_sche_mq-deadline_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_10_dev_1_sche_mq-deadline_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_10_dev_1_sche_mq-deadline.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_none_perf.data >> results_breakdown_1_dev_global/perf_list/proc_15_dev_1_sche_none_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_none_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_15_dev_1_sche_none_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_none_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_15_dev_1_sche_none.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_bfq_perf.data >> results_breakdown_1_dev_global/perf_list/proc_15_dev_1_sche_bfq_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_bfq_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_15_dev_1_sche_bfq_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_bfq_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_15_dev_1_sche_bfq.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_kyber_perf.data >> results_breakdown_1_dev_global/perf_list/proc_15_dev_1_sche_kyber_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_kyber_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_15_dev_1_sche_kyber_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_kyber_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_15_dev_1_sche_kyber.svg
+b''
+b'Filtering for events of type: instructions\n'
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_mq-deadline_perf.data >> results_breakdown_1_dev_global/perf_list/proc_15_dev_1_sche_mq-deadline_perf_list.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf report --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -n -m --stdio --full-source-path --source -s symbol -g -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_mq-deadline_g_perf.data >> results_breakdown_1_dev_global/perf_graph/proc_15_dev_1_sche_mq-deadline_perf_graph.txt
+b''
+b''
+/mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/tools/perf/perf script --vmlinux /mnt/sdc/zebin/linux_build/linux-6.3.8-sched-expr/linux-6.3.8/vmlinux -i results_breakdown_1_dev_global/perf_data/proc_15_dev_1_sche_mq-deadline_g_perf.data | /mnt/sdc/zebin/tools/FlameGraph/stackcollapse-perf.pl | /mnt/sdc/zebin/tools/FlameGraph/flamegraph.pl > results_breakdown_1_dev_global/flame_graph/proc_15_dev_1_sche_mq-deadline.svg
+b''
+b'Filtering for events of type: instructions\n'

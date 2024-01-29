@@ -1,0 +1,22 @@
+nohup: ignoring input
+{'run': True, 'print_only': False}
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --numjobs=256 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=1 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_proc_1_dev_10_core/fio_output/proc_256_dev_1_sche_none.txt --write_lat_log=results_lapp_cdf_inc_proc_1_dev_10_core/latency_log/lat_log_proc_256_dev_1_sche_none
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --numjobs=256 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=1 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_proc_1_dev_10_core/fio_output/proc_256_dev_1_sche_bfq.txt --write_lat_log=results_lapp_cdf_inc_proc_1_dev_10_core/latency_log/lat_log_proc_256_dev_1_sche_bfq
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --numjobs=256 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=1 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_proc_1_dev_10_core/fio_output/proc_256_dev_1_sche_kyber.txt --write_lat_log=results_lapp_cdf_inc_proc_1_dev_10_core/latency_log/lat_log_proc_256_dev_1_sche_kyber
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --numjobs=256 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --iodepth=1 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_proc_1_dev_10_core/fio_output/proc_256_dev_1_sche_mq-deadline.txt --write_lat_log=results_lapp_cdf_inc_proc_1_dev_10_core/latency_log/lat_log_proc_256_dev_1_sche_mq-deadline
+b''
+b''
+Pre-parsed file found, load parsed file directly.
+results_lapp_cdf_inc_proc_1_dev_10_core/parsed_file/sampled_latency_log.pkl loaded
+results_lapp_cdf_inc_proc_1_dev_10_core/parsed_file/sampled_s_latency_log.pkl loaded
+results_lapp_cdf_inc_proc_1_dev_10_core/parsed_file/sampled_c_latency_log.pkl loaded
+Traceback (most recent call last):
+  File "lapp_cdf_inc_proc_1_dev_10_core.py", line 101, in <module>
+    iops_results, iops_stddev, avg_latency_results, avg_latency_stddev, tail_latency_results, cpu_usage_results, ctx_results, latency_log, s_latency_log, c_latency_log = lapp_read_parse_file(
+ValueError: too many values to unpack (expected 10)

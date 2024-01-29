@@ -1,0 +1,2738 @@
+nohup: ignoring input
+{'run': True, 'print_only': False}
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_mix_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/mix_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/mix_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/mix_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_mix_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/mix_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/mix_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/mix_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_mix_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/mix_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/mix_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/mix_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_mix_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/mix_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/mix_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/mix_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_mix_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/mix_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/mix_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/mix_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_mix_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/mix_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/mix_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/mix_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_mix_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/mix_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/mix_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/mix_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_mix_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/mix_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/mix_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/mix_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_mix_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/mix_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/mix_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/mix_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_mix_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/mix_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/mix_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/mix_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/same_cpu_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/same_cpu_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/same_cpu_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_same_cpu_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/same_cpu_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/same_cpu_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/same_cpu_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_same_cpu_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/same_cpu_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/same_cpu_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/same_cpu_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_same_cpu_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/same_cpu_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/same_cpu_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/same_cpu_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/same_cpu_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/same_cpu_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/same_cpu_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/same_cpu_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/same_cpu_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/same_cpu_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/same_cpu_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/same_cpu_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/same_cpu_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/same_cpu_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/same_cpu_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/same_cpu_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/same_cpu_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/same_cpu_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/same_cpu_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_same_cpu_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/same_cpu_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/same_cpu_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_0/fio_output/same_cpu_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_separate_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/separate_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/separate_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_0/fio_output/separate_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_separate_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/separate_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/separate_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_0/fio_output/separate_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_separate_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/separate_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/separate_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_0/fio_output/separate_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_separate_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/separate_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/separate_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_0/fio_output/separate_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_separate_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/separate_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/separate_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_0/fio_output/separate_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_separate_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/separate_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/separate_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_0/fio_output/separate_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_separate_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/separate_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/separate_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_0/fio_output/separate_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_separate_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/separate_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/separate_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_0/fio_output/separate_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_separate_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/separate_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/separate_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_0/fio_output/separate_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_0/bpf_log/bpf_separate_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_0/iops_log/separate_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_0/lat_log/separate_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_0/fio_output/separate_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_mix_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/mix_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/mix_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/mix_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_mix_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/mix_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/mix_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/mix_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_mix_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/mix_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/mix_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/mix_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_mix_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/mix_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/mix_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/mix_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_mix_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/mix_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/mix_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/mix_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_mix_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/mix_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/mix_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/mix_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_mix_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/mix_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/mix_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/mix_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_mix_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/mix_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/mix_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/mix_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_mix_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/mix_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/mix_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/mix_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_mix_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/mix_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/mix_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/mix_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/same_cpu_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/same_cpu_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/same_cpu_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_same_cpu_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/same_cpu_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/same_cpu_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/same_cpu_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_same_cpu_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/same_cpu_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/same_cpu_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/same_cpu_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/same_cpu_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/same_cpu_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/same_cpu_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_same_cpu_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/same_cpu_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/same_cpu_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/same_cpu_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/same_cpu_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/same_cpu_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/same_cpu_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/same_cpu_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/same_cpu_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/same_cpu_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/same_cpu_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/same_cpu_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/same_cpu_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/same_cpu_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/same_cpu_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/same_cpu_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_same_cpu_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/same_cpu_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/same_cpu_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_1/fio_output/same_cpu_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_separate_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/separate_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/separate_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_1/fio_output/separate_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_separate_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/separate_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/separate_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_1/fio_output/separate_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_separate_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/separate_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/separate_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_1/fio_output/separate_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_separate_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/separate_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/separate_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_1/fio_output/separate_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_separate_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/separate_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/separate_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_1/fio_output/separate_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_separate_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/separate_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/separate_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_1/fio_output/separate_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_separate_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/separate_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/separate_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_1/fio_output/separate_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_separate_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/separate_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/separate_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_1/fio_output/separate_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_separate_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/separate_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/separate_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_1/fio_output/separate_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_1/bpf_log/bpf_separate_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_1/iops_log/separate_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_1/lat_log/separate_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_1/fio_output/separate_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_mix_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/mix_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/mix_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/mix_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_mix_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/mix_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/mix_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/mix_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_mix_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/mix_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/mix_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/mix_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_mix_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/mix_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/mix_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/mix_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_mix_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/mix_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/mix_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/mix_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_mix_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/mix_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/mix_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/mix_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_mix_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/mix_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/mix_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/mix_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_mix_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/mix_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/mix_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/mix_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_mix_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/mix_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/mix_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/mix_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_mix_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/mix_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/mix_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/mix_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/same_cpu_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/same_cpu_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/same_cpu_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_same_cpu_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/same_cpu_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/same_cpu_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/same_cpu_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_same_cpu_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/same_cpu_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/same_cpu_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/same_cpu_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/same_cpu_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/same_cpu_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/same_cpu_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_same_cpu_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/same_cpu_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/same_cpu_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/same_cpu_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/same_cpu_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/same_cpu_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/same_cpu_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/same_cpu_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/same_cpu_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/same_cpu_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/same_cpu_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/same_cpu_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/same_cpu_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/same_cpu_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/same_cpu_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/same_cpu_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_same_cpu_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/same_cpu_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/same_cpu_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_2/fio_output/same_cpu_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_separate_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/separate_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/separate_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_2/fio_output/separate_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_separate_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/separate_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/separate_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_2/fio_output/separate_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_separate_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/separate_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/separate_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_2/fio_output/separate_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_separate_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/separate_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/separate_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_2/fio_output/separate_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_separate_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/separate_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/separate_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_2/fio_output/separate_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_separate_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/separate_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/separate_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_2/fio_output/separate_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_separate_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/separate_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/separate_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_2/fio_output/separate_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_separate_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/separate_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/separate_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_2/fio_output/separate_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_separate_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/separate_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/separate_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_2/fio_output/separate_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_2/bpf_log/bpf_separate_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_2/iops_log/separate_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_2/lat_log/separate_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_2/fio_output/separate_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_mix_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/mix_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/mix_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/mix_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_mix_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/mix_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/mix_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/mix_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_mix_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/mix_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/mix_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/mix_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_mix_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/mix_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/mix_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/mix_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_mix_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/mix_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/mix_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/mix_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_mix_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/mix_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/mix_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/mix_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_mix_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/mix_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/mix_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/mix_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_mix_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/mix_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/mix_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/mix_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_mix_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/mix_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/mix_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/mix_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_mix_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/mix_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/mix_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/mix_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_same_cpu_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/same_cpu_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/same_cpu_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/same_cpu_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_same_cpu_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/same_cpu_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/same_cpu_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/same_cpu_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/same_cpu_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/same_cpu_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/same_cpu_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/same_cpu_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/same_cpu_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/same_cpu_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/same_cpu_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/same_cpu_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/same_cpu_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_same_cpu_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/same_cpu_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/same_cpu_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/same_cpu_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/same_cpu_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/same_cpu_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/same_cpu_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/same_cpu_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/same_cpu_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/same_cpu_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_same_cpu_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/same_cpu_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/same_cpu_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/same_cpu_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/same_cpu_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/same_cpu_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_3/fio_output/same_cpu_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_separate_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/separate_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/separate_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_3/fio_output/separate_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_separate_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/separate_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/separate_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_3/fio_output/separate_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_separate_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/separate_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/separate_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_3/fio_output/separate_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_separate_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/separate_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/separate_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_3/fio_output/separate_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_separate_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/separate_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/separate_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_3/fio_output/separate_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_separate_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/separate_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/separate_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_3/fio_output/separate_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_separate_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/separate_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/separate_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_3/fio_output/separate_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_separate_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/separate_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/separate_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_3/fio_output/separate_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_separate_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/separate_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/separate_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_3/fio_output/separate_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_3/bpf_log/bpf_separate_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_3/iops_log/separate_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_3/lat_log/separate_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_3/fio_output/separate_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_mix_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/mix_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/mix_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/mix_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_mix_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/mix_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/mix_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/mix_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_mix_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/mix_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/mix_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/mix_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_mix_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/mix_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/mix_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/mix_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_mix_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/mix_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/mix_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/mix_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_mix_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/mix_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/mix_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/mix_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_mix_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/mix_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/mix_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/mix_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_mix_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/mix_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/mix_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/mix_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_mix_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/mix_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/mix_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/mix_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_mix_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/mix_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/mix_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randrw --rwmixread=50 --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/mix_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_same_cpu_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/same_cpu_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/same_cpu_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/same_cpu_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_same_cpu_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/same_cpu_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/same_cpu_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/same_cpu_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/same_cpu_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/same_cpu_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/same_cpu_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/same_cpu_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/same_cpu_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/same_cpu_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_same_cpu_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/same_cpu_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/same_cpu_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/same_cpu_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_same_cpu_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/same_cpu_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/same_cpu_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/same_cpu_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/same_cpu_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/same_cpu_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/same_cpu_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_same_cpu_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/same_cpu_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/same_cpu_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/same_cpu_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/same_cpu_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/same_cpu_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/same_cpu_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_same_cpu_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/same_cpu_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/same_cpu_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=1 -o results_kyber_vary_target_lat/rep_4/fio_output/same_cpu_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_separate_sche_kyber_r_10ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/separate_sche_kyber_r_10ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/separate_sche_kyber_r_10ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_4/fio_output/separate_sche_kyber_r_10ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_separate_sche_kyber_r_0_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/separate_sche_kyber_r_0_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/separate_sche_kyber_r_0_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_4/fio_output/separate_sche_kyber_r_0_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_separate_sche_kyber_r_0_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/separate_sche_kyber_r_0_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/separate_sche_kyber_r_0_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_4/fio_output/separate_sche_kyber_r_0_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 0
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_separate_sche_kyber_r_0_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/separate_sche_kyber_r_0_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/separate_sche_kyber_r_0_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_4/fio_output/separate_sche_kyber_r_0_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_separate_sche_kyber_r_1s_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/separate_sche_kyber_r_1s_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/separate_sche_kyber_r_1s_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_4/fio_output/separate_sche_kyber_r_1s_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 1000000000
+Set parameter write_lat_nsec to 1000000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_separate_sche_kyber_r_1s_w_1s.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/separate_sche_kyber_r_1s_w_1s_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/separate_sche_kyber_r_1s_w_1s_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_4/fio_output/separate_sche_kyber_r_1s_w_1s.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 2000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_separate_sche_kyber_r_2ms_w_2ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/separate_sche_kyber_r_2ms_w_2ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/separate_sche_kyber_r_2ms_w_2ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_4/fio_output/separate_sche_kyber_r_2ms_w_2ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 10000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_separate_sche_kyber_r_10ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/separate_sche_kyber_r_10ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/separate_sche_kyber_r_10ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_4/fio_output/separate_sche_kyber_r_10ms_w_10ms.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 0
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_separate_sche_kyber_r_2ms_w_0.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/separate_sche_kyber_r_2ms_w_0_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/separate_sche_kyber_r_2ms_w_0_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_4/fio_output/separate_sche_kyber_r_2ms_w_0.txt
+b''
+b''
+sleep 10s
+b''
+b''
+modprobe -r kyber_iosched
+b''
+b''
+modprobe kyber_iosched
+b''
+b''
+Set parameter read_lat_nsec to 2000000
+Set parameter write_lat_nsec to 10000000
+exec bpftrace -e 'BEGIN {printf("start: %llu\n", nsecs)} tracepoint:kyber:kyber_adjust {printf("domain: %s, depth: %d, timestamp: %llu\n", args->domain, args->depth, nsecs)}' > results_kyber_vary_target_lat/rep_4/bpf_log/bpf_separate_sche_kyber_r_2ms_w_10ms.txt
+sleep 10s
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --time_based=1 --ramp_time=360s --runtime=480s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --norandommap=1 --group_reporting=1 --direct=1 --allow_file_create=0 --output-format=json --bs=4k --iodepth=128 --filename=/dev/nvme5n1 --write_iops_log=results_kyber_vary_target_lat/rep_4/iops_log/separate_sche_kyber_r_2ms_w_10ms_iops --write_lat_log=results_kyber_vary_target_lat/rep_4/lat_log/separate_sche_kyber_r_2ms_w_10ms_lat --log_avg_msec=1000 --name=1 --rw=randread --cpus_allowed=1 --name=2 --rw=randwrite --cpus_allowed=2 -o results_kyber_vary_target_lat/rep_4/fio_output/separate_sche_kyber_r_2ms_w_10ms.txt
+b''
+b''
+mix
+    0 & 2ms & 10ms & 71.2~(2.6) & 71.2~(2.6) & 256.0~(0.0) & 7.1~(6.8) \\
+    1 & 10ms & 2ms & 79.4~(13.2) & 79.4~(13.2) & 107.0~(42.7) & 128.0~(0.0) \\
+    2 & 0 & 10ms & 75.4~(3.7) & 75.4~(3.7) & 256.0~(0.0) & 1.9~(1.6) \\
+    3 & 2ms & 0 & 87.5~(6.8) & 87.5~(6.8) & 223.0~(29.6) & 128.0~(0.0) \\
+    4 & 0 & 0 & 88.9~(10.6) & 88.9~(10.6) & 256.0~(0.0) & 128.0~(0.0) \\
+    5 & 2ms & 2ms & 80.0~(8.6) & 80.1~(8.6) & 256.0~(0.0) & 87.3~(34.4) \\
+    6 & 10ms & 10ms & 84.4~(10.4) & 84.4~(10.4) & 253.7~(1.4) & 128.0~(0.0) \\
+    7 & 1s & 1s & 80.8~(13.2) & 80.8~(13.2) & 256.0~(0.0) & 128.0~(0.0) \\
+    8 & 0 & 1s & 72.4~(6.5) & 72.4~(6.5) & 256.0~(0.0) & 1.0~(0.0) \\
+    9 & 1s & 0 & 12.8~(0.3) & 12.8~(0.3) & 1.0~(0.0) & 128.0~(0.0) \\
+    \hline
+same_cpu
+    0 & 2ms & 10ms & 120.0~(3.0) & 105.2~(3.9) & 256.0~(0.0) & 100.8~(11.1) \\
+    1 & 10ms & 2ms & 96.4~(13.5) & 102.6~(6.5) & 132.5~(33.6) & 128.0~(0.0) \\
+    2 & 0 & 10ms & 53.9~(3.1) & 72.7~(0.7) & 256.0~(0.0) & 18.9~(4.1) \\
+    3 & 2ms & 0 & 112.3~(1.5) & 102.3~(3.3) & 188.9~(8.0) & 128.0~(0.0) \\
+    4 & 0 & 0 & 121.6~(2.1) & 90.8~(17.9) & 256.0~(0.0) & 128.0~(0.0) \\
+    5 & 2ms & 2ms & 122.7~(3.0) & 104.6~(3.4) & 256.0~(0.0) & 126.5~(1.3) \\
+    6 & 10ms & 10ms & 84.7~(17.3) & 91.3~(12.5) & 99.5~(34.0) & 128.0~(0.0) \\
+    7 & 1s & 1s & 121.4~(3.2) & 90.0~(11.7) & 256.0~(0.0) & 128.0~(0.0) \\
+    8 & 0 & 1s & 42.2~(4.2) & 70.3~(1.4) & 256.0~(0.0) & 1.0~(0.0) \\
+    9 & 1s & 0 & 2.5~(0.0) & 112.8~(2.2) & 1.0~(0.0) & 128.0~(0.0) \\
+    \hline
+separate
+    0 & 2ms & 10ms & 156.7~(5.3) & 103.4~(5.1) & 256.0~(0.0) & 93.4~(7.0) \\
+    1 & 10ms & 2ms & 102.4~(7.1) & 121.5~(2.6) & 156.5~(17.8) & 128.0~(0.0) \\
+    2 & 0 & 10ms & 189.4~(11.5) & 79.4~(2.2) & 256.0~(0.0) & 54.0~(14.6) \\
+    3 & 2ms & 0 & 137.8~(0.6) & 114.8~(4.2) & 252.7~(2.0) & 128.0~(0.0) \\
+    4 & 0 & 0 & 136.1~(1.0) & 118.5~(5.0) & 256.0~(0.0) & 128.0~(0.0) \\
+    5 & 2ms & 2ms & 140.5~(3.5) & 112.7~(5.2) & 256.0~(0.0) & 123.5~(3.8) \\
+    6 & 10ms & 10ms & 105.5~(11.0) & 119.9~(6.5) & 157.3~(31.2) & 128.0~(0.0) \\
+    7 & 1s & 1s & 137.2~(1.8) & 113.6~(5.7) & 256.0~(0.0) & 128.0~(0.0) \\
+    8 & 0 & 1s & 219.9~(11.0) & 70.0~(0.3) & 256.0~(0.0) & 1.0~(0.0) \\
+    9 & 1s & 0 & 2.1~(0.0) & 118.8~(5.4) & 1.0~(0.0) & 128.0~(0.0) \\
+    \hline

@@ -1,0 +1,114 @@
+nohup: ignoring input
+{'run': True, 'print_only': False}
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --iodepth=1 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_1_dev_1_sche_none.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_1_dev_1_sche_none
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --iodepth=1 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_1_dev_1_sche_bfq.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_1_dev_1_sche_bfq
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --iodepth=1 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_1_dev_1_sche_kyber.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_1_dev_1_sche_kyber
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --iodepth=1 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_1_dev_1_sche_mq-deadline.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_1_dev_1_sche_mq-deadline
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --iodepth=2 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_2_dev_1_sche_none.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_2_dev_1_sche_none
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --iodepth=2 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_2_dev_1_sche_bfq.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_2_dev_1_sche_bfq
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --iodepth=2 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_2_dev_1_sche_kyber.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_2_dev_1_sche_kyber
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --iodepth=2 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_2_dev_1_sche_mq-deadline.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_2_dev_1_sche_mq-deadline
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --iodepth=4 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_4_dev_1_sche_none.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_4_dev_1_sche_none
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --iodepth=4 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_4_dev_1_sche_bfq.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_4_dev_1_sche_bfq
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --iodepth=4 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_4_dev_1_sche_kyber.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_4_dev_1_sche_kyber
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --iodepth=4 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_4_dev_1_sche_mq-deadline.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_4_dev_1_sche_mq-deadline
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --iodepth=8 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_8_dev_1_sche_none.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_8_dev_1_sche_none
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --iodepth=8 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_8_dev_1_sche_bfq.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_8_dev_1_sche_bfq
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --iodepth=8 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_8_dev_1_sche_kyber.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_8_dev_1_sche_kyber
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --iodepth=8 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_8_dev_1_sche_mq-deadline.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_8_dev_1_sche_mq-deadline
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --iodepth=16 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_16_dev_1_sche_none.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_16_dev_1_sche_none
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --iodepth=16 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_16_dev_1_sche_bfq.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_16_dev_1_sche_bfq
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --iodepth=16 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_16_dev_1_sche_kyber.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_16_dev_1_sche_kyber
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --iodepth=16 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_16_dev_1_sche_mq-deadline.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_16_dev_1_sche_mq-deadline
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --iodepth=32 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_32_dev_1_sche_none.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_32_dev_1_sche_none
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --iodepth=32 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_32_dev_1_sche_bfq.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_32_dev_1_sche_bfq
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --iodepth=32 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_32_dev_1_sche_kyber.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_32_dev_1_sche_kyber
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --iodepth=32 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_32_dev_1_sche_mq-deadline.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_32_dev_1_sche_mq-deadline
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --iodepth=64 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_64_dev_1_sche_none.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_64_dev_1_sche_none
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --iodepth=64 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_64_dev_1_sche_bfq.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_64_dev_1_sche_bfq
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --iodepth=64 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_64_dev_1_sche_kyber.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_64_dev_1_sche_kyber
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --iodepth=64 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_64_dev_1_sche_mq-deadline.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_64_dev_1_sche_mq-deadline
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --iodepth=128 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_128_dev_1_sche_none.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_128_dev_1_sche_none
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --iodepth=128 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_128_dev_1_sche_bfq.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_128_dev_1_sche_bfq
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --iodepth=128 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_128_dev_1_sche_kyber.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_128_dev_1_sche_kyber
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --iodepth=128 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_128_dev_1_sche_mq-deadline.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_128_dev_1_sche_mq-deadline
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=none --iodepth=256 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_256_dev_1_sche_none.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_256_dev_1_sche_none
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=bfq --iodepth=256 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_256_dev_1_sche_bfq.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_256_dev_1_sche_bfq
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=kyber --iodepth=256 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_256_dev_1_sche_kyber.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_256_dev_1_sche_kyber
+b''
+b''
+/mnt/sdc/zebin/local/fio-3.35/fio --ioscheduler=mq-deadline --iodepth=256 --cpus_allowed=1 --time_based=1 --ramp_time=30s --runtime=120s --ioengine=io_uring --registerfiles=1 --fixedbufs=1 --size=100% --bs=4kb --norandommap=1 --group_reporting=1 --direct=1 --rw=randread --allow_file_create=0 --output-format=json --filename=/dev/nvme5n1 --name=1 -o results_lapp_cdf_inc_qd_1_dev_1_core/fio_output/qd_256_dev_1_sche_mq-deadline.txt --write_lat_log=results_lapp_cdf_inc_qd_1_dev_1_core/latency_log/lat_log_qd_256_dev_1_sche_mq-deadline
+b''
+b''
+Traceback (most recent call last):
+  File "lapp_cdf_inc_qd_1_dev_1_core.py", line 105, in <module>
+    num_processes=num_processes,
+NameError: name 'num_processes' is not defined
