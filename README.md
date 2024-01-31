@@ -4,7 +4,9 @@
 
 This repro contains all the scripts used in ICPE'23 BFQ, Multiqueue-Deadline, or Kyber? Performance Characterization of Linux Storage Schedulers in the NVMe Era. 
 
-## Installation
+## Setup Environments
+
+Before running the experiments, we provide instructions on how to build and install Linux 6.3.8 and how to build the tools. Please note the path to the binary is needed in the following experiments to be provided to the scripts. Please use the absolute path.
 
 ### Update Linux to the latest version
 
@@ -60,7 +62,7 @@ Force synchronous dispatching:
 echo 2 | sudo tee /sys/module/fops/parameters/force_sync_submission
 ```
 
-Note: During the experiments, we find that the I/O requests with None are processed by the same process where the I/O request is issues. The I/O requests with BFQ, Kyber and MQ-Deadline are processed by a kernel worker, this cause a nearly 50% performance drop. Since this work focuses on the I/O schedulers instead of the Linux storage stack, thus we force all the requests to be processed in the same way.
+Note: During the experiments, we find that the I/O requests with None are processed by the same process where the I/O request is issued. The I/O requests with BFQ, Kyber and MQ-Deadline are processed by a kernel worker, this causes a nearly 50% performance drop. Since this work focuses on the I/O schedulers instead of the Linux storage stack, thus we force all the requests to be processed in the same way.
 
 ### Install fio
 
@@ -76,7 +78,7 @@ git checkout fio-3.35
 make -j $(getconf _NPROCESSORS_ONLN)
 ```
 
-The fio binary is located at fio/fio
+The fio binary is located at fio/fio. This binary should be provided to the scripts as the --fio option.
 
 ### Install SPDK
 
@@ -94,12 +96,16 @@ sudo scripts/pkgdep.sh
 make 
 ```
 
+The SPDK directory should be provided to the scripts as the --spdk_dir option.
+
 SPDK needs the PCIe address to access the storage devices, to get the PCIe address:
+
 ```bash
 ls -l /sys/block/nvme0n1/device/device
 # output: lrwxrwxrwx 1 root root 0 Jan 27 02:00 /sys/block/nvme0n1/device/device -> ../../../0000:00:04.0
 ```
-Then the PCIe address of this storage device is 0000:00:04.0. This address will be used in the following experiments.
+
+Then the PCIe address of this storage device is 0000:00:04.0. This address will be used in the following experiments with the --spdk_dev option.
 
 ### Install BPF trace
 
@@ -117,7 +123,7 @@ cmake -B ./build -DBUILD_TESTING=OFF
 make -C ./build -j$(nproc)
 ```
 
-The binary file is located in ~/local/bpftrace/build/src/bpftrace
+The binary file is located in //bpftrace/build/src/bpftrace, this path is needed with the --bpftrace option.
 
 ### Install perf
 
@@ -128,9 +134,12 @@ cd ~/linux_build/linux-6.3.8/tools/perf
 make -j$(getconf _NPROCESSORS_ONLN)
 ```
 
-After make, the perf binary is located at ~/linux_build/linux-6.3.8/tools/perf/perf
+After make, the perf binary is located at //linux_build/linux-6.3.8/tools/perf/perf, this path is needed with the --perf option.
 
 ### Python
+
+We rely on python3 to run the scripts. There is no specific version requirement for python3. matplotlib is used to plot the figures. To install matplotlib:
+
 ```bash
 sudo apt-get install pip
 sudo pip install matplotlib
@@ -143,12 +152,13 @@ Since the experiment results varies with different hardware, we also provide all
 All the experiments in our paper are carried out in a single socket server with a 10-core CPU and 8 Samsung 980 pro 1TB. The result may vary with different hardware~(such as CPU) or different storage devices. Here is a list to check if you use a different environment:
 
 * We disable Hyper-threading and Trubo in all the experiments.
-* Please make sure that all the fio processes/threads are run on the CPU cores that in the same socket. We have noticed that the some I/O schedulers induces significantly high lock contention with cross NUMA settings.
-* We do CPU pinning in figure 1, 2, 3, table 2, 3, 4. Please make sure CPU 1 and 2 are available. If CPU 1 or 2 is not available to the experiments, the pinned CPU core should be changed in the scritps.
-* Since different hardware leads to different performance, you might need to change the xlimt and ylimit used in the plots~(or delete them).
-
+* Please make sure that all the fio processes/threads are run on the CPU cores that in the same socket. We have noticed that some I/O schedulers~(BFQ and MQ-Deadline) induce significantly high lock contention with cross-NUMA settings.
+* We do CPU pinning in figure 1, 2, 3, table 2, 3, 4. Please make sure CPU 1 and 2 are available. If CPU 1 or 2 is not available to the experiments, the pinned CPU core should be changed in the scripts.
+* Since different hardware leads to different absolute performance~(throughput and latency), you might need to change the xlimt and ylimit used in the plots~(or delete them).
 
 NOTE: Please check if the device used (the --dev option) does not contain any useful data. The experiments will corrupt the data in the used storage devices.
+
+Each time a script is run, it creates a directory start in the current directory to store the results. If the directory already exists, the script exits. The old data is not deleted automatically to prevent data loss. If you want to re-run an experiment, please delete the old results first.
 
 ### Setup
 
@@ -179,11 +189,11 @@ fio: io_u error on file /dev/nvme1n1: Invalid argument: read offset=537125032448
 fio: first direct IO errored. File system may not support direct IO, or iomem_align= is bad, or invalid block size. Try setting direct=0.
 ```
 
-TODO: Add spdk for B and Ca
+For fig 1a and 1b, a single device is needed, for fig 1c, all the devices are needed. If there are more than one devices, they are concatenated with ':', please see the examples below.
+
 ```bash
 cd fig-1-samsung-baseline
 # figure 1a, use a single storage device.
-sudo python3 qd_iops_vary_bs.py
 sudo python3 qd_iops_vary_bs.py -r --fio YOUR_FIO_PATH --dev YOUR_DEVICE
 # Example: sudo python3 qd_iops_vary_bs.py -r --fio /home/user/local/fio/fio --dev /dev/nvme1n1
 
@@ -193,7 +203,7 @@ sudo python3 qd_iops_inc_proc_4kb.py -r --fio YOUR_FIO_PATH --dev YOUR_DEVICE --
 
 # figure 1c, use all 8 storage devices.
 sudo python3 qd_iops_inc_proc_4kb_8_dev.py -r --fio YOUR_FIO_PATH --dev YOUR_DEVICE --spdk_dir YOUR_SPDK_DIR --spdk_dev YOUR_SPDK_DEVICE
-# Example: sudo python3 qd_iops_inc_proc_4kb_8_dev.py -r --fio /home/user/local/fio/fio --dev /dev/nvme1n1 --spdk_dir /home/user/local/spdk --spdk_dev 'trtype=PCIe traddr=0000.00.09.0 ns=1:traddr=0000.00.0a.0:traddr=0000.00.0b.0:traddr=0000.00.08.0:traddr=0000.00.05.0:traddr=0000.00.04.0:traddr=0000.00.06.0:traddr=0000.00.07.0 ns=1'
+# Example: sudo python3 qd_iops_inc_proc_4kb_8_dev.py -r --fio /home/user/local/fio/fio --dev /dev/nvme0n1:/dev/nvme1n1:/dev/nvme2n1:/dev/nvme3n1:/dev/nvme4n1:/dev/nvme5n1:/dev/nvme6n1:/dev/nvme7n1 --spdk_dir /home/user/local/spdk --spdk_dev 'trtype=PCIe traddr=0000.00.09.0 ns=1:traddr=0000.00.0a.0:traddr=0000.00.0b.0:traddr=0000.00.08.0:traddr=0000.00.05.0:traddr=0000.00.04.0:traddr=0000.00.06.0:traddr=0000.00.07.0 ns=1'
 ```
 
 ### Figure 2: 4a and 6a Intra-process scalability
@@ -250,7 +260,7 @@ python3 plot_lock_contention_8_dev.py
 
 ### Figure 9: T-app inter-process scalability with an increasing number of SSDs
 
-The devices are setted in the source code fig-9-ssd-scala/tapp_inc_dev_10_proc.py at line 8. Please provide the devices used in the experment as the example given at line 9 - line 12.
+The devices are set in the source code fig-9-ssd-scala/tapp_inc_dev_10_proc.py at line 8. Please provide the devices used in the experments as the example given at line 9 - line 12.
 
 ```bash
 cd fig-9-ssd-scala
@@ -442,6 +452,7 @@ python3 kyber_l_t_mix_2_core.py
 
 # License
 This code and artifact is distributed under the MIT license. 
+
 ```
 MIT License
 
