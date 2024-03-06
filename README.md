@@ -13,7 +13,7 @@ Before running the experiments, we provide instructions on how to build and inst
 Clone the source code
 
 ```bash
-git clone git@github.com:ZebinRen/icpe24_io_scheduler_study_public.git scheduler_study_artifact
+git clone https://github.com/stonet-research/icpe24_io_scheduler_study_artifact
 ```
 
 Download Linux 6.3.8
